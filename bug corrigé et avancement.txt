@@ -1,0 +1,17 @@
+bug corrigé : 
+
+-modification fichier login.js 
+
+=> passer de employee à admin dans la ligne 44
+
+-bill UI (views) => sort les bills par date lign 22 à 30 => à tester 
+
+-[big hunt] Bills
+
+
+=> modal
+=> correction dubug pour l'extansion des fichiers via le code implimenter ligne 20 à 55 (handlechange) dans le fichiers NewBill.js dans les containers
+
+- [big hunt] Dashboard 
+
+=> fix bug with dashboard dropdowns via les ligne 157 à 162 du fichier dashboard.js==> test à faire
