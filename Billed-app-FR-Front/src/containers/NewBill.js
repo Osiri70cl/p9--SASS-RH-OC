@@ -47,9 +47,16 @@ export default class NewBill {
           this.fileUrl = fileUrl;
           this.fileName = fileName;
         })
+
         .catch((error) => console.error(error));
     } else {
-      alert("Erreur : Le fichier doit être au format .jpg, .jpeg ou .png !");
+      const msgError = this.document.querySelector(
+        `p[data-testid="error-message"]`
+      );
+      msgError.classList.remove("hidden");
+      // window.alert(
+      //   "Erreur : Le fichier doit être au format .jpg, .jpeg ou .png !"
+      // );
       this.document.querySelector(`input[data-testid="file"]`).value = "";
     }
   };
@@ -83,6 +90,7 @@ export default class NewBill {
   };
 
   // not need to cover this function by tests
+  // istanbul ignore next
   updateBill = (bill) => {
     if (this.store) {
       this.store
